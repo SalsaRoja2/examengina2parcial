@@ -6,20 +6,22 @@
     
     <script src="https://kit.fontawesome.com/8f11a81b5b.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
-    
+     
       
     <link rel="stylesheet" href="css/flexboxpiedepagina.css">
     <link rel="stylesheet" href="css/menu.css">
-    
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/carrousel.css">
  
+    
+   
     
    
 </head>
 
 
 <body>
-
-<header class="header">
+<div class="contenedor">
   <nav>
      <ul class ="menu-horizontal">
          <li><a href="">Inicio</a></li>
@@ -57,78 +59,41 @@
      </ul>
       
     </nav>
+    <main>
+   <div class="container-slaider">
+                                <div class="slider" id="slider">
+                                    <div class="slider__section">
+                                        <img src="images/2c66a7c617b834535487fbc24a7c3d82.jpg" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__section">
+                                        <img src="images/9216bcd74a3d55de1a26021541003489.jpg" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__section">
+                                        <img src="images/b479e71457c44c6595d0a2cd3a904cd5.jpg" alt="" class="slider__img">
+                                    </div>
+                                </div>
+                                <div class="slider__btn slider__btn--right " id="right">&#62;</div>
+                                <div class="slider__btn slider__btn--left" id="left">&#60;</div>
+
+
+                            </div>
+                        
+    
+        </main> 
+    
+    
+    <div id="Sidebar">sidebar</div>  
+     <div id="content1">content1</div>  
+     <div id="content2">content2</div> 
+     <div id="content3">content3</div> 
    
-</header>
+   <ul class="puntos">
+       <li class="punto"></li>
+       <li class="punto"></li>
+   </ul>
 
-<div class="grid-container">
-                        <div class="grid-inicio">
-                            <div class="container-slaider">
-                               
+</div>
 
-                        </div>
-                        </div>
-
-
-                        <div class="grid-botones">
-                            
-                        </div>
-                        <div class="grid-item"> 
-                        <div class="containerimg">
-       
-    <div class="overlay1">
-        
-    
-       <div class="text">Home
-    </div>
-    </div>
-    </div>
-                           
-                           
-                        </div>
-                        
-                        
-                        <div class="grid-item" style="text-align: justify-all">
-                           
-                            <div class="containerimg">
-       <img class="imagenGrid" src="images/recarga.jpeg">
-    <div class="overlay2">
-        
-    
-       <div class="text">Aire
-    </div>
-     </div>
-     </div>
-                           
-                           <br>Recarga<strong style="color: deepskyblue">Lorem</strong>
-                            <p>
-                                <br><strong style="color: deepskyblue">Lorem</strong>
-                                <br>asd <strong>asdadsasd</strong>
-
-                                <br> <a href="url" style="color: deepskyblue">asdasdads</a>
-                            </p>
-                        </div>
-                        <div class="grid-item">
-                           <div class="containerimg">
-      <img class="imagenGrid" src="images/videocall.png">
-    <div class="overlay3">
-        
-    
-       <div class="text">Video
-    </div>
-     </div>
-     </div><br>Videoconferencia<strong style="color: deepskyblue"><br>Telmex</strong>
-                            <p>
-                                <br><strong style="color: deepskyblue">Realiza juntas sin translados</strong>
-                                <br>organiza sesiones de trabaco con clientes y colaboradores.
-
-                                <br> <a href="url" style="color: deepskyblue">Conocer Videoconferencia</a>
-                            </p>
-                        </div>
-
-
-
-                    </div>
-                
 
 
    
@@ -238,6 +203,6 @@
         </div>
 
        
-    
+     <script src="js/carrousel.js"></script>
 </body>
 </html>
