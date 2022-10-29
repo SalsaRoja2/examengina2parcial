@@ -16,26 +16,26 @@ $preguntadas = array(); // declaramos una variable que usaremos de contenedor pa
 $array = array(
     
     'Que entiendes por c++: <br>
-    <input type="radio" name="Pregunta1" value="Bien-1" checked="checked" >Es un lenguaje Bien Chido<br>
-    <input type="radio" name="Pregunta1" value="Mal">Es una puta mierda<br>
-    <input type="radio" name="Pregunta1" value="Mal">Es una puta mierda<br>',
+    <input type="radio" name="Pregunta1" value="Bien-1" >C++ es un ejemplo de lenguaje de programación compilado, multiparadigma, principalmente de tipo imperativo y orientado a objetos<br>
+    <input type="radio" name="Pregunta1" value="Mal">Un Servidor Web<br>
+    <input type="radio" name="Pregunta1" value="Mal">Un editor para la creacion de paginas web<br>',
     
     
     'Principales usos de C++: <br>
-    <input type="radio" name="Pregunta2" value="Bien-2" checked="checked" >Programar<br>
-    <input type="radio" name="Pregunta2" value="Mal">Hacer Hosting<br>
-    <input type="radio" name="Pregunta2" value="Mal">Editor Web<br>',
+    <input type="radio" name="Pregunta2" value="Bien-2" >Crear datos complejos.Definir operaciones sobre los datos complejos.Relacionar los datos complejos entre ellos.<br>
+    <input type="radio" name="Pregunta2" value="Mal">Creaciones de Bases de Datos y Documentar Archivos<br>
+    <input type="radio" name="Pregunta2" value="Mal">Aplicacion de cuentas Bancarias<br>',
     
     
-    'Te gusta C++: <br>
-    <input type="radio" name="Pregunta3" value="Bien-3" checked="checked" >Si<br>
-    <input type="radio" name="Pregunta3" value="Mal">No<br>
-    <input type="radio" name="Pregunta3" value="Mal">Mas o menos<br>',
+    'Cual es la Sintaxis correcta para escribir "Hello World" en C++? <br>
+    <input type="radio" name="Pregunta3" value="Bien-3" > cout << "Hello World"; <br>
+    <input type="radio" name="Pregunta3" value="Mal"> print ("Hello World"); <br>
+    <input type="radio" name="Pregunta3" value="Mal"> Console.WriteLine("Hello World"); <br>',
     
     
     'Programarias en C++: <br>
     <input type="radio" name="Pregunta4" value="Mal">No<br>
-    <input type="radio" name="Pregunta4" value="Bien-4" checked="checked" >Si<br>
+    <input type="radio" name="Pregunta4" value="Bien-4" >Si<br>
     <input type="radio" name="Pregunta4" value="Mal">Mas o menos<br>'
 
     );
@@ -43,7 +43,11 @@ $items=count($array)-1;
  
 for ($i=1; $i<=3; $i++){
     $var=rand( 0 , $items );
-    if (in_array($array[$var], $preguntadas)){ // Buscamos si la pregunta ya se habia hecho
+    if (in_array($array[$var], $preguntadas)){ 
+        
+        
+        
+        // Buscamos si la pregunta ya se habia hecho
         $i--;  // restamos 1 para reutilizar el indice de la pregunta repetida  
     }else{
         echo $i.') '.$array[$var].'<br>';  // Mostramos la pregunta
@@ -59,13 +63,23 @@ for ($i=1; $i<=3; $i++){
  
  <?php
     
+    
+    
+    
+    
+    
     if($_POST){
+            
         $Pregunta1 = $_POST["Pregunta1"];
         $Pregunta2 = $_POST["Pregunta2"];
         $Pregunta3 = $_POST["Pregunta3"];
         $Pregunta4 = $_POST["Pregunta4"];
+            
+        
+       
         $C = 0;
         $I = 2;
+        
         if($Pregunta1=="Bien-1"){
             $C+=1;
         }
