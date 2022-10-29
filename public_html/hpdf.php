@@ -16,11 +16,13 @@
     $doc->Text('140','70','a:');
     $doc->Ln();
     $doc->SetFont('Courier','I','35');
-    $doc->Text('50','90',$_POST['']);
+    $doc->Text('50','90','Nombre persona');
     $doc->SetFont('Arial','','20');
-    $doc->Text('40','120','Por haber finalizado el dia '.$_POST['fecha'].' el curso de C++');
+    $fechah=date('d-m-y');
+    $doc->Text('40','120','Por haber finalizado el dia '.$fechah.' el curso de Manejo de C++');
     $doc->SetFont('Courier','I','20');
-    $doc->Text('100','130','Con duracion de '.$_POST['hrs'].' horas.');
+    $doc->Text('100','130',' Impartido por "Nombre de instructor" en Aguascalientes,Ags');
+    $doc->Text('100','140','Por "Nombre de la Empresa"');
     $doc->Image('images/mmf.png',20,157,35,15,'PNG');
     $doc->Text('20','175','Nombre prof');
     
