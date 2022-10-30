@@ -1,7 +1,91 @@
-.contenedor1{
-   width 100%;
-    max-width: 100%;
-    overflow: hidden
 
+
+.contenedor1{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    grid-template-rows: .1fr .1fr .5fr ;
+    
+    grid-template-areas: 
+                         "titulo titulo titulo"
+                            "c1 c2 c3 "
+                            "p1 p2 p3" ;
+                        
+                        
+    grid-gap: .5rem;
+    
 }
 
+    
+    
+}
+
+#titulo{
+    background-color: antiquewhite;
+    grid-area: titulo;
+}
+
+#c1{
+    grid-area: c1;
+   background-color: pink
+    
+    
+}
+
+#c2{
+    background-color: aquamarine;
+    grid-area: c2;
+    
+}
+#c3{
+    background-color: lightblue;
+    grid-area: c3;
+    
+}
+
+#p1{
+    background-color: aliceblue;
+    grid-area: p1;
+   
+    
+    
+}
+
+#p2{
+    background-color: aquamarine;
+    grid-area: p2;
+    
+}
+#p3{
+    background-color: lightblue;
+    grid-area: p3;
+    
+}
+
+@media only screen and(max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: .04fr .04fr 2.2fr 1fr 1.2fr  1fr 1.2fr;
+        grid-template-areas: "nav"
+                            "main"
+                            "sidebar"
+                            "content1"
+                            "content2"
+                            "content3"
+                            "footer";
+    }
+}
+
+@media only screen and (max-width: 29.8125rem /*477px*/) {
+    .container {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 77.5rem /*1240px*/ ) {
+    .container {
+        justify-content: space-evenly;
+    }
+}
