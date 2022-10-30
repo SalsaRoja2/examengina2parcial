@@ -10,7 +10,7 @@
    
   <?php
     
-    
+error_reporting(0);
 
 $preguntadas = array(); // declaramos una variable que usaremos de contenedor para las preguntas ya realizadas
 $array = array(
@@ -33,15 +33,85 @@ $array = array(
     <input type="radio" name="Pregunta3" value="Mal"> Console.WriteLine("Hello World"); <br>',
     
     
-    'Programarias en C++: <br>
-    <input type="radio" name="Pregunta4" value="Mal">No<br>
-    <input type="radio" name="Pregunta4" value="Bien-4" >Si<br>
-    <input type="radio" name="Pregunta4" value="Mal">Mas o menos<br>'
+    'Como se insertan comentarios en C++: <br>
+    <input type="radio" name="Pregunta4" value="Mal"> $$ <br>
+    <input type="radio" name="Pregunta4" value="Bien-4"> // <br>
+    <input type="radio" name="Pregunta4" value="Mal"> ** <br>',
+    
+    
+    'Como se crea una variable de tipo entero con valor 5? <br>
+    <input type="radio" name="Pregunta5" value="Bien-5" > int x = 5 <br>
+    <input type="radio" name="Pregunta5" value="Mal"> x = 5 <br>
+    <input type="radio" name="Pregunta5" value="Mal"> num x = 5 <br>',
+    
+    
+    'Cual es la funcion para crear una variable de tipo flotante <br>
+    <input type="radio" name="Pregunta6" value="Mal"> int <br>
+    <input type="radio" name="Pregunta6" value="Mal"> char <br>
+    <input type="radio" name="Pregunta6" value="Bien-6" > double <br>',
+    
+    'Cual es el operador para comparar si son iguales nuestras incognitas <br>
+    <input type="radio" name="Pregunta7" value="Mal"> <> <br>
+    <input type="radio" name="Pregunta7" value="Bien-7" > == <br>
+    <input type="radio" name="Pregunta7" value="Mal"> = <br>',
+    
+    'Para declarar un array que tipo se utiliza? <br>
+    <input type="radio" name="Pregunta8" value="Mal"> ( ) <br>
+    <input type="radio" name="Pregunta8" value="Bien-8" > [ ] <br>
+    <input type="radio" name="Pregunta8" value="Mal"> { } <br>',
+    
+    'Que se utiliza para detener un loop? <br>
+    <input type="radio" name="Pregunta9" value="Mal"> stop <br>
+    <input type="radio" name="Pregunta9" value="Bien-9" > break <br>
+    <input type="radio" name="Pregunta9" value="Mal"> exit <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex7.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta10" value="Mal"> spaces <br>
+    <input type="radio" name="Pregunta10" value="Mal"> spaces in text <br>
+    <input type="radio" name="Pregunta10" value="Bien-10" > spacesintext <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex6.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta11" value="Mal"> Hello <br>
+    <input type="radio" name="Pregunta11" value="Bien-11" > Error <br>
+    <input type="radio" name="Pregunta11" value="Mal"> World <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex1.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta12" value="Bien-12" > Error de Copilacion <br>
+    <input type="radio" name="Pregunta12" value="Mal"> Base <br>
+    <input type="radio" name="Pregunta12" value="Mal"> Ninguna de las anteriores <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex2.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta13" value="Mal"> 5 <br>
+    <input type="radio" name="Pregunta13" value="Bien-13" > Garbage <br>
+    <input type="radio" name="Pregunta13" value="Mal"> error al copilar <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex3.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta14" value="Mal"> Error al copilar <br>
+    <input type="radio" name="Pregunta14" value="Bien-14" > 0 <br>
+    <input type="radio" name="Pregunta14" value="Mal"> 65535 <br>',
+    
+    'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex4.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta15" value="Bien-15" > 60 13 <br>
+    <input type="radio" name="Pregunta15" value="Mal"> 73 73 <br>
+    <input type="radio" name="Pregunta15" value="Mal"> 13 60 <br>',
+    
+   'Cual es el resultado del siguiente codigo ? <br>
+    <img src="images/Ex5.jpg" alt=""> <br>
+    <input type="radio" name="Pregunta16" value="Mal"> C++ C++ <br>
+    <input type="radio" name="Pregunta16" value="Mal"> ++ ++ <br>
+    <input type="radio" name="Pregunta16" value="Bien-16" > C++ ++ <br>'
 
     );
+    
 $items=count($array)-1;
  
-for ($i=1; $i<=3; $i++){
+for ($i=1; $i<=8; $i++){
     $var=rand( 0 , $items );
     if (in_array($array[$var], $preguntadas)){ 
         
@@ -61,6 +131,8 @@ for ($i=1; $i<=3; $i++){
    
  </form>
  
+  
+ 
  <?php
     
     
@@ -74,11 +146,22 @@ for ($i=1; $i<=3; $i++){
         $Pregunta2 = $_POST["Pregunta2"];
         $Pregunta3 = $_POST["Pregunta3"];
         $Pregunta4 = $_POST["Pregunta4"];
+        $Pregunta5 = $_POST["Pregunta5"];
+        $Pregunta6 = $_POST["Pregunta6"];
+        $Pregunta7 = $_POST["Pregunta7"];
+        $Pregunta8 = $_POST["Pregunta8"];
+        $Pregunta9 = $_POST["Pregunta9"];
+        $Pregunta10 = $_POST["Pregunta10"];
+        $Pregunta11 = $_POST["Pregunta11"];
+        $Pregunta12 = $_POST["Pregunta12"];
+        $Pregunta13 = $_POST["Pregunta13"];
+        $Pregunta14 = $_POST["Pregunta14"];
+        $Pregunta15 = $_POST["Pregunta15"];
+        $Pregunta16 = $_POST["Pregunta16"];
             
-        
        
         $C = 0;
-        $I = 2;
+        $I = 1;
         
         if($Pregunta1=="Bien-1"){
             $C+=1;
@@ -92,13 +175,52 @@ for ($i=1; $i<=3; $i++){
         if($Pregunta4=="Bien-4"){
             $C+=1;
         }
+        if($Pregunta5=="Bien-5"){
+            $C+=1;
+        }
+        if($Pregunta6=="Bien-6"){
+            $C+=1;
+        }
+        if($Pregunta7=="Bien-7"){
+            $C+=1;
+        }
+        if($Pregunta8=="Bien-8"){
+            $C+=1;
+        }
+        if($Pregunta9=="Bien-9"){
+            $C+=1;
+        }
+        if($Pregunta10=="Bien-10"){
+            $C+=1;
+        }
+        if($Pregunta11=="Bien-11"){
+            $C+=1;
+        }
+        if($Pregunta12=="Bien-12"){
+            $C+=1;
+        }
+        if($Pregunta13=="Bien-13"){
+            $C+=1;
+        }
+        if($Pregunta14=="Bien-14"){
+            $C+=1;
+        }
+        if($Pregunta15=="Bien-15"){
+            $C+=1;
+        }
+        if($Pregunta16=="Bien-16"){
+            $C+=1;
+        }
         if($C >= $I){
-            echo "Pasaste el examen";
+            
+            header("Location: Aprobado.php");
+            
+        }else{
+            echo "No pasaste el examen";
         }
     }
     
     ?>
-  
     
 </body>
 </html>
