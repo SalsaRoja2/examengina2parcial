@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Certificado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          border: none;
+          color: white;
+          padding: 18px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        input[type=button] {
+          background-color: #e62644;
+          border: none;
+          color: white;
+          padding: 18px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+    
+        body{
+            justify-content: center;
+            padding-left: 380px;
+            background: #9d9d9d;
+        }
+        
+        form{
+            padding-left: 30px;
+            justify-content: center;
+            width: 80%;
+            border-collapse: collapse;
+            border: 20px solid block;
+            background-color: #c1c0c0;
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            font-size: 20px;
+            
+        }
+        
+    </style>
 </head>
 <body>
    
 <form action= " <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> " method="post">   
+   
+   <table>
    
   <?php
     
@@ -127,7 +171,11 @@ for ($i=1; $i<=8; $i++){
 
 ?> 
   
-  <input type="submit" name="submit" value="Enviar">
+  <input type="submit" name="submit" value="Enviar Respuestas" >
+  <input type="button" name="Boton" value="Cancelar Examen" >
+  
+  
+  </table>
    
  </form>
  
@@ -213,10 +261,39 @@ for ($i=1; $i<=8; $i++){
         }
         if($C >= $I){
             
+            $F = $C/$I;
+            $F = $F*10;
+            
+            $fp = fopen("Certificado.txt", "a+");
+            fputs($fp, " Usuario ");
+            fputs($fp, " C++ ");
+            fputs($fp, " $F ");
+            fputs($fp, " Aprobado ");
+            
+            
+            fclose($fp);
+            
+            
             header("Location: Aprobado.php");
             
+            
         }else{
-            echo "No pasaste el examen";
+            
+            $F = $C/$I;
+            $F = $F*10;
+            
+            $fp = fopen("Certificado.txt", "a+");
+            fputs($fp, " Usuario ");
+            fputs($fp, " C++ ");
+            fputs($fp, " $F ");
+            fputs($fp, " Reprobado ");
+            
+            
+            fclose($fp);
+            
+            header("Location: Reprobado.php");
+            
+            
         }
     }
     
