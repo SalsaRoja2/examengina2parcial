@@ -1,30 +1,32 @@
 
 
 <?php
-    include_once("fpdf/fpdf.php");
+        
+    include_once("../fpdf/fpdf.php");
     $doc=new FPDF();
     $doc->AddPage('L','A4');
-   
-    $doc->Image('images/c++',10,10,50,28,'PNG');
+
+    $doc->Image('images/fc.png',3,null,0,0,'PNG');
+
+    $doc->Image('images/c++.png',20,20,45,40,'PNG');
     $doc->SetFont('Helvetica','B','30');
-    $doc->Text('60','30','Nombre empresa');
+    $doc->Text('115','40','Xtreme Code');
     $doc->SetFont('Arial','B','20');
-    $doc->Text('135','40','Otorga');
+    $doc->Text('135','50','Otorga');
     $doc->SetFont('Arial','I','30');
-    $doc->Text('120','60','Constancia');
+    $doc->Text('120','70','Constancia');
     $doc->SetFont('Arial','B','20');
-    $doc->Text('140','70','a:');
+    $doc->Text('145','80','a:');
     $doc->Ln();
     $doc->SetFont('Courier','I','35');
-    $doc->Text('50','90','Nombre persona');
+    $doc->Text('50','110',"nombre persona");
     $doc->SetFont('Arial','','20');
     $fechah=date('d-m-y');
-    $doc->Text('40','120','Por haber finalizado el dia '.$fechah.' el curso de Manejo de C++');
+    $doc->Text('50','130','Por haber finalizado el dia '.$fechah.' el curso de Manejo de C++');
     $doc->SetFont('Courier','I','20');
-    $doc->Text('100','130',' Impartido por "Nombre de instructor" en Aguascalientes,Ags');
-    $doc->Text('100','140','Por "Nombre de la Empresa"');
-    $doc->Image('images/mmf.png',20,157,35,15,'PNG');
-    $doc->Text('20','175','Nombre prof');
+    $doc->Text('40','140',' Impartido por "Juan Teran" en Aguascalientes,Ags');
+    $doc->Image('images/mmf.png',30,157,45,15,'PNG');
+    $doc->Text('30','175','Juan Teran');
     
     $doc->Output('constancia.pdf','I');
 
