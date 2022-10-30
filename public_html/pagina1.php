@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="css/normal.css">
 
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 
 </head>
@@ -48,11 +48,38 @@
                 <li>
                     <a href=""><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
-                        <li><a href="">iniciar sesión</a></li>
-                        <li><a href="">Registrarse</a></li>
+                        <?php
+                        date_default_timezone_set('America/Mexico_City');
+                        $today = getdate();
+                        $hora=$today["hours"];
+                        
+                        $usrh="";
+                        if ($hora<=12) {
+                        $usrh="Buenos dias ";
+                        }elseif($hora<19 && $hora >12){
+                        $usrh="Buenas tardes ";
+                        }elseif($hora<=24 && $hora >=19){
+                        $usrh="Buenas noches ";
+                        }
+                                session_start();
+                                if(isset($_SESSION['usuario'])){
+
+                                    echo $usrh.$_SESSION['usuario'];
+                                    ?>
+                                    <a href="logout.php">Cerrar sesión</a>
+                                        
+                            <?php
+                                }else{
+
+                                
+                            ?>
+                        <li><a href="cuenta.php">iniciar sesión</a></li>
+                        <li><a href="regis.php">Registrarse</a></li>
 
                     </ul>
-
+                         <?php
+                            }
+                         ?>               
 
                 </li>
 
@@ -243,4 +270,6 @@
 
 
     <script src="js/carrousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body></html>

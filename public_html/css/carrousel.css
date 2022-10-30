@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .container-slaider{
-    width 100;
+    width :100;
     max-width: 100%;
     margin:auto;
     overflow:hidden;    
@@ -27,7 +27,7 @@
     display: flex;
     width: 300%;
     height: 500px;
-    margin-left: :-100%;
+    margin-left: -100%;
     
     
 }

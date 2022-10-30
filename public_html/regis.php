@@ -60,19 +60,30 @@
             </ul>
 
         </nav>
-        <form action="login.php" method="post" style="display: felx;">
-        <div class="form-group" style="justify-content: rigth;">
+        <form action="registxt.php" method="post" style="display: felx;">
+        <div style="justify-content: center;">
+        <h3 style="color:white;">Registrar una cuenta</h3>
+        <div class="form-group">
+                <label for="exampleInputPassword1" style="color:white;">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="nombrec">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" style="color:white;">Correo</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="correo">
+            </div>
+        <div class="form-group">
                 <label for="exampleInputPassword1" style="color:white;">Usuario</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" name="usr">
+                <input type="text" class="form-control" id="exampleInputPassword1" name="usur">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1" style="color:white;">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" name="contra">
+                <input type="password" class="form-control" id="exampleInputPassword1" name="contras">
             </div>
            
            
-            <button type="submit" class="btn btn-primary">Entrar</button>
-            <a href="regis.php">No tienes cuenta? Crea una.</a>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+       
         </form>
         <!------<main>
             <div class="container-slaider">
