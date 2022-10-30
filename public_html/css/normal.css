@@ -1,13 +1,13 @@
 
 
 .contenedor1{
+    
     display: grid;
-    height: 100vh;
+    height: vh;
     text-align: center;
-    align-content: center;
     grid-template-columns: 1fr 1fr 1fr ;
     
-    grid-template-rows: .1fr .1fr .5fr ;
+    grid-template-rows: .1fr .1fr .2fr ;
     
     grid-template-areas: 
                          "titulo titulo titulo"
