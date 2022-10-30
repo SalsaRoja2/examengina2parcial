@@ -8,11 +8,11 @@
        
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    grid-template-rows: .1fr .1fr 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr 1fr 1fr 1fr 1fr;
     
     grid-template-areas: "nav nav nav nav"
                          "main  main main main"
-                        "sidebar sidebar sidebar sidebar"
+                        "sideba sidebar sidebar sidebar"
                         "content1 content1 content2 content2"
                         "content3 content3 content3 content3"
                         "footer footer footer footer";
