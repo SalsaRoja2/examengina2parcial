@@ -6,7 +6,7 @@
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    grid-template-rows: .1fr 1.5fr 1.2fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr 1fr 1fr 1fr;
     
     grid-template-areas: "nav nav nav nav"
                          "main  main main main"
@@ -37,7 +37,7 @@ main{
 
 #content1{
     background-image: url(../images/e426702edf874b181aced1e2fa5c6cde.gif);
-    background-size: cover;
+    background-size:contain;
     grid-area: content1;
    
     
