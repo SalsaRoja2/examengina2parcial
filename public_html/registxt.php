@@ -6,13 +6,13 @@
     $nombre =$_POST["nombrec"];
     $correo=$_POST["correo"];
      
-    $arch = fopen(".txt","a+");
+    $arch = fopen("usuarios.txt","a+");
     $datos= $usuario." ".$contra." ".$nombre." ".$correo."\r\n";
     fwrite($arch, $datos);
     
     fclose($arch);
    
      
-    echo "<br><a href='cuenta.php'>regresar</a>";
+    header("Location: cuenta.php");
 
 ?>

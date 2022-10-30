@@ -48,10 +48,39 @@
                 <li>
                     <a href=""><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
-                        <li><a href="">iniciar sesión</a></li>
-                        <li><a href="">Registrarse</a></li>
+                    <?php
+                        date_default_timezone_set('America/Mexico_City');
+                        $today = getdate();
+                        $hora=$today["hours"];
+                        
+                        $usrh="";
+                        if ($hora<=12) {
+                        $usrh="Buenos dias ";
+                        }elseif($hora<19 && $hora >12){
+                        $usrh="Buenas tardes ";
+                        }elseif($hora<=24 && $hora >=19){
+                        $usrh="Buenas noches ";
+                        }
+                                session_start();
+                                if(isset($_SESSION['usuario'])){
+
+                                    $var = $usrh.$_SESSION['usuario'];
+                                    echo "<p style='color:white;'>$var </p>";
+                                    ?>
+                                    <a href="logout.php">Cerrar sesión</a>
+                                        
+                            <?php
+                                }else{
+
+                                
+                            ?>
+                        <li><a href="cuenta.php">iniciar sesión</a></li>
+                        <li><a href="regis.php">Registrarse</a></li>
 
                     </ul>
+                         <?php
+                            }
+                         ?>       
 
 
                 </li>
@@ -83,75 +112,9 @@
            
             <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
-       
         </form>
-        <!------<main>
-            <div class="container-slaider">
-                <div class="slider" id="slider">
-                    <div class="slider__section">
-
-                        <img src="images/2c66a7c617b834535487fbc24a7c3d82.jpg" alt="" class="slider__img">
-                    </div>
-                    <div class="slider__section">
-
-                        <img src="images/9216bcd74a3d55de1a26021541003489.jpg" alt="" class="slider__img">
-
-                    </div>
-                    <div class="slider__section">
-
-                        <img src="images/fondos%20animados2_zpsdbpvulbd.gif" alt="" class="slider__img">
-
-                    </div>
-                </div>
-                <div class="slider__btn slider__btn--right " id="right">&#62;</div>
-                <div class="slider__btn slider__btn--left" id="left">&#60;</div>
-
-
-            </div>
-
-
-        </main>
-
-
-        <div id="sidebar">
-        <div class="contenedor1"><img src="images/imagengrid.jpg" alt=""></div>
         
         
-        </div>
-
-        <div id="content1">
-              <h1 style="text-align: center;color: orange; align-content: center;padding-top: 20px; padding-bottom:">Porque certificarte con nosotros?</h1>
-               <div class="contenedor1">
-                
-                 
-                     <div id="c1"><h2>Trabajo</h2>
-                   
-                   </div>
-                   <div id="c2"><h2>Becas</h2></div>
-                   <div id="c3"><h2>Excelentes Resultados</h2></div>
-                   <div id="p1"><p>Las oportunidades de trabajo con nuestro certificado aumentan y son aún mas seguras!</p>
-                
-                   </div>
-                   <div id="p2"><p>Tenemos beca, puedes participar mandandonos un correo electronico!</p>
-                
-                   </div>
-                   <div id="p3"><p>el 80% de  las personas que compran nuestros cursos obtienen aumentos o mejores trabajos</p>
-                
-                   </div>
-             
-                 </div>   
-
-        </div>
-
-        <div id="content2">content2
-        <ul>
-                        <li><a href="#" style="color: whitesmoke">Cursos</a></li>
-                        <li><a href="#" style="color: whitesmoke">Pagos</a></li>
-                        <li><a style="color: whitesmoke" href="#">Recibo</a></li>
-
-
-                    </ul></div>
-        <div id="content3">content3</div> --->
         <footer>
             <section class="ft-top">
 

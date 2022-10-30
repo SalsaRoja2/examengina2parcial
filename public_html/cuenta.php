@@ -48,10 +48,41 @@
                 <li>
                     <a href=""><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
-                        <li><a href="">iniciar sesión</a></li>
-                        <li><a href="">Registrarse</a></li>
+                    <?php
+                        date_default_timezone_set('America/Mexico_City');
+                        $today = getdate();
+                        $hora=$today["hours"];
+                        
+                        $usrh="";
+                        if ($hora<=12) {
+                        $usrh="Buenos dias ";
+                        }elseif($hora<19 && $hora >12){
+                        $usrh="Buenas tardes ";
+                        }elseif($hora<=24 && $hora >=19){
+                        $usrh="Buenas noches ";
+                        }
+                                session_start();
+                                if(isset($_SESSION['usuario'])){
+
+                                    $var = $usrh.$_SESSION['usuario'];
+                                    echo "<p style='color:white;'>$var </p>";
+                                   
+                                   
+                                    ?>
+                                    <a href="logout.php">Cerrar sesión</a>
+                                        
+                            <?php
+                                }else{
+
+                                
+                            ?>
+                        <li><a href="cuenta.php">iniciar sesión</a></li>
+                        <li><a href="regis.php">Registrarse</a></li>
 
                     </ul>
+                         <?php
+                            }
+                         ?>       
 
 
                 </li>

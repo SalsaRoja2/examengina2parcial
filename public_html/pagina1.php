@@ -64,7 +64,8 @@
                                 session_start();
                                 if(isset($_SESSION['usuario'])){
 
-                                    echo $usrh.$_SESSION['usuario'];
+                                    $var = $usrh.$_SESSION['usuario'];
+                                    echo "<p style='color:white;'>$var </p>";
                                     ?>
                                     <a href="logout.php">Cerrar sesión</a>
                                         
