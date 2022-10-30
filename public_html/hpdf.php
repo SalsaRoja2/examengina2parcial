@@ -9,6 +9,7 @@
     $doc->Image('images/fc.png',3,null,0,0,'PNG');
 
     $doc->Image('images/c++.png',20,20,45,40,'PNG');
+    $doc->Image('images/logo.png',190,25,80,30,'PNG');
     $doc->SetFont('Helvetica','B','30');
     $doc->Text('115','40','Xtreme Code');
     $doc->SetFont('Arial','B','20');

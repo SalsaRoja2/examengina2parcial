@@ -276,7 +276,7 @@ for ($i=1; $i<=8; $i++){
             $E = $F;
             
             $arch = fopen("Certificado.txt", "a+");
-            $datos= "Usuario"." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
+            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Aprobado"." ".$hora."\r\n";
             fwrite($arch, $datos);
     
             fclose($arch);
@@ -300,7 +300,7 @@ for ($i=1; $i<=8; $i++){
             
             
             $arch = fopen("Certificado.txt", "a+");
-            $datos= "Usuario"." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
+            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
             fwrite($arch, $datos);
     
             fclose($arch);
