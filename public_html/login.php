@@ -118,10 +118,10 @@
             if ($band==1){
                 
                 session_start();
-                $micarrito=[];
+                
                 
                 $_SESSION["usuario"] = $usuario;
-                $_SESSION["compras"] = $micarrito;
+              
             
                 # Luego redireccionamos a la pagina "Secreta"
                 header("Location: index.php");
