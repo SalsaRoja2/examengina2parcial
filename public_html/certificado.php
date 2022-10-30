@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Certificado</title>
+    <title>XtremeC</title>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Lobster&display=swap" rel="stylesheet">
+    
+    
     <style>
         
         input[type=submit] {
@@ -53,6 +55,8 @@
    <table>
    
   <?php
+       
+       session_start();
     
 error_reporting(0);
 
@@ -209,7 +213,7 @@ for ($i=1; $i<=8; $i++){
             
        
         $C = 0;
-        $I = 1;
+        $I = 5;
         
         if($Pregunta1=="Bien-1"){
             $C+=1;
@@ -261,17 +265,21 @@ for ($i=1; $i<=8; $i++){
         }
         if($C >= $I){
             
-            $F = $C/$I;
+            date_default_timezone_set('America/Mexico_City');
+            $today = getdate();
+            $hora=$today["hours"];
+            
+            
+            $B = 8;
+            $F = $C/$B;
             $F = $F*10;
+            $E = $F;
             
-            $fp = fopen("Certificado.txt", "a+");
-            fputs($fp, " Usuario ");
-            fputs($fp, " C++ ");
-            fputs($fp, " $F ");
-            fputs($fp, " Aprobado ");
-            
-            
-            fclose($fp);
+            $arch = fopen("Certificado.txt", "a+");
+            $datos= "Usuario"." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
+            fwrite($arch, $datos);
+    
+            fclose($arch);
             
             
             header("Location: Aprobado.php");
@@ -279,17 +287,23 @@ for ($i=1; $i<=8; $i++){
             
         }else{
             
-            $F = $C/$I;
+           
+            date_default_timezone_set('America/Mexico_City');
+            $today = getdate();
+            $hora = $today["hours"];
+            
+            
+            $B = 8;
+            $F = $C/$B;
             $F = $F*10;
-            
-            $fp = fopen("Certificado.txt", "a+");
-            fputs($fp, " Usuario ");
-            fputs($fp, " C++ ");
-            fputs($fp, " $F ");
-            fputs($fp, " Reprobado ");
+            $E = $F;
             
             
-            fclose($fp);
+            $arch = fopen("Certificado.txt", "a+");
+            $datos= "Usuario"." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
+            fwrite($arch, $datos);
+    
+            fclose($arch);
             
             header("Location: Reprobado.php");
             
