@@ -122,7 +122,7 @@
 
 
 
-                    <h2 class="ft-title-top"><i class="fa-solid fa-magnifying-glass"></i>Lo mas Visto</h2>
+                    <h2 class="ft-title-top"></i>Lo mas Visto</h2>
                     <ul>
                         <li><a href="#" style="color: whitesmoke">Cursos</a></li>
                         <li><a href="#" style="color: whitesmoke">Pagos</a></li>
@@ -159,31 +159,28 @@
                 <div class="ft-main-item">
 
 
-                    <h2 class="ft-title">Nuestros servicios</h2>
+                    <h2 class="ft-title">Certificados</h2>
                     <ul>
-                        <li><a href="#">ejemplo1</a></li>
-                        <li><a href="#">ejemplo2</a></li>
-                        <li><a href="#">ejemplo4</a></li>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">CSS</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
-                    <h2 class="ft-title"></h2>
+                    <h2 class="ft-title">Contactanos!</h2>
                     <ul>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        
                     </ul>
                 </div>
                 <div class="ft-main-item">
                     <h2 class="ft-title">Conoce Mas</h2>
                     <ul>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
-                        <li><a href="#">asd</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Cursos</a></li>
+                     
                     </ul>
                 </div>
 
