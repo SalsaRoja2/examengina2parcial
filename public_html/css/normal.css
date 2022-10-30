@@ -5,9 +5,11 @@
     display: grid;
     height: vh;
     text-align: center;
+    color:whitesmoke;
     grid-template-columns: 1fr 1fr 1fr ;
     
     grid-template-rows: .1fr .1fr .2fr ;
+    
     
     grid-template-areas: 
                          "titulo titulo titulo"
@@ -24,44 +26,54 @@
 }
 
 #titulo{
-    background-color: antiquewhite;
+    background-color: rgb(0,0,0,.3);
     grid-area: titulo;
 }
 
 #c1{
     grid-area: c1;
-   background-color: pink
+  background-color: rgb(0,0,0,.3);
+    border-radius: 7%;
     
     
 }
 
 #c2{
-    background-color: aquamarine;
+    background-color: rgb(0,0,0,.3);
     grid-area: c2;
+     border-radius: 7%;
+    
     
 }
 #c3{
-    background-color: lightblue;
+  background-color: rgb(0,0,0,.3);
     grid-area: c3;
+     border-radius: 7%;
+    
     
 }
 
 #p1{
-    background-color: aliceblue;
+   background-color: rgb(255,255,255,.3);
     grid-area: p1;
-   
+     border-radius: 7%;
+    
     
     
 }
 
 #p2{
-    background-color: aquamarine;
+    background-color: rgb(255,255,255,.3);
     grid-area: p2;
+    
+     border-radius: 7%;
     
 }
 #p3{
-    background-color: lightblue;
+   background-color: rgb(255,255,255,.3);
     grid-area: p3;
+     border-radius: 7%;
+    
     
 }
 
