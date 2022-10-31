@@ -26,7 +26,7 @@
                 <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.php">Inicio</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="cursos.html">Cursos</a>
+                    <a class="nav-link" href="cursos.php">Cursos</a>
                     <ul class="menu-vertical">
 
                         <li><a class="nav-link" href="">HTML</a></li>

@@ -30,7 +30,6 @@
             justify-content: center;
             border-collapse: collapse;
             border: 20px solid block;
-            
             font-size: 20px;
             
         }
@@ -170,7 +169,7 @@ for ($i=1; $i<=8; $i++){
   
   <input type="submit" name="submit" value="Enviar Respuestas" >
   
-  <a href="pagina1.html" value="Terminar Examen">Terminar Examen</a>
+  <a href="pagina1.php" value="Terminar Examen">Terminar Examen</a>
   
    
  </form>
