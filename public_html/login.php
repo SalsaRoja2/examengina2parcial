@@ -26,72 +26,32 @@
 
 <body>
     <div class="contenedor">
-        <nav>
-            <ul class="menu-horizontal">
-                <li><a href="">Inicio</a></li>
-
-                <li>
-                    <a href="">Cursos</a>
+        <nav class="nav navbar navbar-dark bg-dark">
+            <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
+                <li class="nav-item"><a class="nav-link" href="pagina1.php">Inicio</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.php">Cursos</a>
                     <ul class="menu-vertical">
-
-                        <li><a href="">HTML</a></li>
-                        <li><a href="">CSS</a></li>
-                        <li><a href="">PHP</a></li>
-                        <li><a href="">JAVASCRIPT</a></li>
+                        <li><a class="nav-link" href="">C++</a></li>
+                        <li><a class="nav-link" href="">CSS</a></li>
+                        <li><a class="nav-link" href="">PHP</a></li>
+                        <li><a class="nav-link" href="">JAVASCRIPT</a></li>
                     </ul>
-
-
                 </li>
-
-
-                <li><a href="">Contacto</a></li>
-
-
-                <li><a href="">Acerca de</a></li>
-                <li>
-                    <a href=""><i class="fa-solid fa-user"> </i> Mi cuenta </a>
+                <li class="nav-item"><a class="nav-link" href="Contacto.php">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="Acerca%20de.html">Acerca de</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cuenta.php"><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
-                    <?php
-                        date_default_timezone_set('America/Mexico_City');
-                        $today = getdate();
-                        $hora=$today["hours"];
-                        
-                        $usrh="";
-                        if ($hora<=12) {
-                        $usrh="Buenos dias ";
-                        }elseif($hora<19 && $hora >12){
-                        $usrh="Buenas tardes ";
-                        }elseif($hora<=24 && $hora >=19){
-                        $usrh="Buenas noches ";
-                        }
-                                session_start();
-                                if(isset($_SESSION['usuario'])){
-
-                                    $var = $usrh.$_SESSION['usuario'];
-                                    echo "<p style='color:white;'>$var </p>";
-                                    ?>
-                                    <a href="logout.php">Cerrar sesión</a>
-                                        
-                            <?php
-                                }else{
-
-                                
-                            ?>
-                        <li><a href="cuenta.php">iniciar sesión</a></li>
-                        <li><a href="regis.php">Registrarse</a></li>
-
+                        <a class="nav-link" href="logout.php">Cerrar sesión</a>
+                        <li><a class="nav-link" href="cuenta.php">iniciar sesión</a></li>
+                        <li><a class="nav-link" href="regis.php">Registrarse</a></li>
                     </ul>
-                         <?php
-                            }
-                         ?>       
-
-
                 </li>
-
-
             </ul>
-
         </nav>
+        
+        
         <?php
             $usuario = $_POST["usr"];
             $palabra_secreta = $_POST["contra"];

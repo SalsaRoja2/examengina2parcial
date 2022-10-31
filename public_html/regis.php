@@ -31,7 +31,7 @@
                 <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.php">Inicio</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="Cursos.php">Cursos</a>
+                    <a class="nav-link" href="cursos.php">Cursos</a>
                     <ul class="menu-vertical">
 
                         <li><a class="nav-link" href="">C++</a></li>
@@ -52,7 +52,7 @@
                 <li class="nav-item"><a class="nav-link" href="Acerca%20de.html">Acerca de</a></li>
                 <li class="nav-item"><a class="nav-link" href="validar.php">Administrador</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Cuenta.html"><i class="fa-solid fa-user"> </i> Mi cuenta </a>
+                    <a class="nav-link" href="cuenta.php"><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
                         <?php
                         date_default_timezone_set('America/Mexico_City');
