@@ -6,57 +6,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Lobster&display=swap" rel="stylesheet">
     
     
+    
     <style>
+        
+        
+        body{
+            background: #adadad;
+        }
         
         input[type=submit] {
           background-color: #04AA6D;
           border: none;
           color: white;
-          padding: 18px 32px;
+          padding: 16px 30px;
           text-decoration: none;
-          margin: 4px 2px;
+          
           cursor: pointer;
         }
         
-        input[type=button] {
-          background-color: #e62644;
-          border: none;
-          color: white;
-          padding: 18px 32px;
-          text-decoration: none;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-    
-        body{
+        .Certificado{
+            color: black;
+            padding: 30px;
             justify-content: center;
-            padding-left: 380px;
-            background: #9d9d9d;
-        }
-        
-        form{
-            padding-left: 30px;
-            justify-content: center;
-            width: 80%;
             border-collapse: collapse;
             border: 20px solid block;
-            background-color: #c1c0c0;
-            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            
             font-size: 20px;
             
         }
         
     </style>
+    
 </head>
+
+
 <body>
    
-<form action= " <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> " method="post">   
+<form action= " <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> " class="Certificado" method="post">   
    
-   <table>
+   
    
   <?php
        
-       session_start();
+session_start();
     
 error_reporting(0);
 
@@ -168,6 +160,7 @@ for ($i=1; $i<=8; $i++){
         // Buscamos si la pregunta ya se habia hecho
         $i--;  // restamos 1 para reutilizar el indice de la pregunta repetida  
     }else{
+        
         echo $i.') '.$array[$var].'<br>';  // Mostramos la pregunta
         $preguntadas[].=$array[$var];  // y la agregamos a las que ya se hicieron        
     }
@@ -176,17 +169,15 @@ for ($i=1; $i<=8; $i++){
 ?> 
   
   <input type="submit" name="submit" value="Enviar Respuestas" >
-  <input type="button" name="Boton" value="Cancelar Examen" >
   
+  <a href="pagina1.html" value="Terminar Examen">Terminar Examen</a>
   
-  </table>
    
  </form>
  
   
  
  <?php
-    
     
     
     
@@ -281,11 +272,19 @@ for ($i=1; $i<=8; $i++){
     
             fclose($arch);
             
-            
             header("Location: Aprobado.php");
+            die();
+            exit();
             
+            ?>
             
-        }else{
+            <script>
+                
+            window.location.replace("http://localhost/examengina2parcial/public_html/Aprobado.php");
+    
+            </script>
+            
+       <?php }else{
             
            
             date_default_timezone_set('America/Mexico_City');
@@ -301,18 +300,20 @@ for ($i=1; $i<=8; $i++){
             
             
             $arch = fopen("Certificado.txt", "a+");
-            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Aprobado"." ".$fechasys." ".$hora."\r\n";
+            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Reprobado"." ".$fechasys." ".$hora."\r\n";
             fwrite($arch, $datos);
     
             fclose($arch);
             
             header("Location: Reprobado.php");
-            
+            die();
+            exit();
             
         }
     }
     
     ?>
+    
     
 </body>
 </html>
