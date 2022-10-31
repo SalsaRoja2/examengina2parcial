@@ -89,55 +89,79 @@
 
         </nav>
         <div class="contenedor2">
-        <div class="card">
-            <figure>
-                <img src="images/cppimg.jpg" alt="">
-            </figure>
-            <div class="contenido">
-               <h3>C++</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
-                <a href="validar2.php">Hacer Examen</a>
-                
+            <div class="card">
+                <figure>
+                    <img src="images/cppimg.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>C++</h3>
+                    <p>Una certificación en c que te dará las herramientas para probar tus conocimientos
+                        Esta certificación cuenta con validez a nivel mundial tiene gran valor curricular en diferentes empresas como Google Oracle Facebook etc.
+                        la calificación mínima aprobatoria es de: 6.25
+                        Tienes 30 min para hacer el examen.
+                        Fechas próximas:
+                        Actualmente abierto hasta el 30/Octubre/2023.
+                    </p>
+                    <a href="validar2.php">Hacer Examen</a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/phpimg.webp" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>PHP</h3>
+                    <p>Un excelente programa para desarrollo web ¿Quieres tener un papel para validar tus conocimientos? Este es tu momento este certificado trae grandes beneficios
+                        Mejores oportunidades laborales, mejores ingresos, consigue el trabajo de tus sueños en el extranjero
+                        Tiempo de examen 40 min.
+                        Puntaje mínimo 6.
+                        Fechas próximas:
+                        1/enero/2023 – 12/febrero/2023
+                    </p>
+                    <a href="#">Hacer Examen</a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/ccsimg.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>CSS</h3>
+                    <p>Toma este curso y aprenderás a diseñar tus paginas a darles una excelente visualización
+                        La ventaja con este curso a otros es que no solo aprenderás css si no diseño como tal, sabrás como se guía el ser humano en una página, para darle mejor presentación a tu contenido.
+                        Curso 2 semanas con certificación puntaje para pasar 7 .
+                        Fechas próximas:
+                        12/enero/2023 – 20/febrero/2023
+                    </p>
+                    <a href="#">Hacer Examen</a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="images/jsimg.jfif" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>JAVASCRIPT</h3>
+                    <p>No esperes mas toma esta certificación, los mejores expertos han estado con nosotros a lo largo del proceso de esta certificación, probará tus conocimientos a fondo y será un reto.
+                        Reconocimiento en todo México.
+                        Mínima aprobatoria 7.5
+                        Duración 3 hrs.
+                        Fechas próximas:
+
+                        20/febrero/2023
+                    </p>
+                    <a href="#">Hacer Examen</a>
+
+                </div>
             </div>
         </div>
-        
-        <div class="card">
-            <figure>
-                <img src="images/phpimg.webp" alt="">
-            </figure>
-            <div class="contenido">
-               <h3>PHP</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
-                <a href="#">Hacer Examen</a>
-                
-            </div>
-        </div>
-        
-        <div class="card">
-            <figure>
-                <img src="images/ccsimg.jpg" alt="">
-            </figure>
-            <div class="contenido">
-               <h3>CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
-                <a href="#">Hacer Examen</a>
-                
-            </div>
-        </div>
-        
-        <div class="card">
-            <figure>
-                <img src="images/jsimg.jfif" alt="">
-            </figure>
-            <div class="contenido">
-               <h3>JAVASCRIPT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
-                <a href="#">Hacer Examen</a>
-                
-            </div>
-        </div>
-        </div>
-      
+
         <footer>
             <section class="ft-top">
 
@@ -179,7 +203,7 @@
                         <input type="submit" value="Subscribe">
                     </form>
                 </div>
-               
+
 
             </section>
 
@@ -217,8 +241,10 @@
 
 
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-</body></html>
+</body>
+
+</html>
