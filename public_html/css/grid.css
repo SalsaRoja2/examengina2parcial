@@ -4,7 +4,7 @@
 .contenedor{
     display: grid;
     height: 100vh;
-     justify-items: stretch;   
+   justify-content: center; 
        
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
@@ -49,13 +49,14 @@ main{
 }
 
 #content2{
-    background-color: rgb(0,0,0,.5);
+    background-image: url(../images/coding.gif);
+    background-size: fill;
     grid-area: content2;
     
     
 }
 #content3{
-    background-color: lightblue;
+    background-color: rgb(0,0,0,.9);
     grid-area: content3;
     
 }
