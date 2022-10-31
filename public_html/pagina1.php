@@ -96,9 +96,7 @@
 
         </nav>
         
-<?php
-echo "La fecha de modificación del fichero 001-ejemplo-php-filemtime.php es '" . date ("F d Y H:i:s.", filemtime("001-ejemplo-php-filemtime.php")) . "'";
-?>
+
         <main>
             <div class="container-slaider">
                 <div class="slider" id="slider">
@@ -258,7 +256,23 @@ echo "La fecha de modificación del fichero 001-ejemplo-php-filemtime.php es '" 
 
             </section>
 
+                
+                
+            <?php
 
+$host= $_SERVER["HTTP_HOST"];
+
+$url= $_SERVER["REQUEST_URI"];
+
+$archivo="";
+function actualizacion($nombre){
+$archivo = $_SERVER['DOCUMENT_ROOT'].$nombre;
+$actual = date("d/m/Y",filemtime($archivo));
+return 'Actualizado: '.$actual;
+}
+$nombre ='http://" . $host . $url';
+echo actualizacion($archivo);
+?>
 
 
             <!-- Footer legal -->
