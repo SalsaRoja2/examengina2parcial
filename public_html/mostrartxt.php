@@ -113,8 +113,8 @@
 
            
         ?>
-        <div style="padding-top:20px;" class="container">
-            <table class="table table-hover">
+        <div style="margin-left:270px;" class="container">
+            <table class="table table-bordered table-dark">
                 <tr>
                     <th>Usuario</th>
                     <th>Certificado</th>
