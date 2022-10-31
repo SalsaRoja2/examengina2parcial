@@ -266,9 +266,9 @@ for ($i=1; $i<=8; $i++){
         if($C >= $I){
             
             date_default_timezone_set('America/Mexico_City');
-            $today = getdate();
-            $hora=$today["hours"];
             
+            $hora=date("h-m-s");
+            $fechasys=date('d-m-y');
             
             $B = 8;
             $F = $C/$B;
@@ -276,7 +276,7 @@ for ($i=1; $i<=8; $i++){
             $E = $F;
             
             $arch = fopen("Certificado.txt", "a+");
-            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Aprobado"." ".$hora."\r\n";
+            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Aprobado"." ".$fechasys." ".$hora."\r\n";
             fwrite($arch, $datos);
     
             fclose($arch);
@@ -289,8 +289,9 @@ for ($i=1; $i<=8; $i++){
             
            
             date_default_timezone_set('America/Mexico_City');
-            $today = getdate();
-            $hora = $today["hours"];
+            $hora=date("h-m-s");
+            $fechasys=date('d-m-y');
+            
             
             
             $B = 8;
@@ -300,7 +301,7 @@ for ($i=1; $i<=8; $i++){
             
             
             $arch = fopen("Certificado.txt", "a+");
-            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Reprobado"." ".$hora."\r\n";
+            $datos= $_SESSION['usuario']." "."C++"." ".$E." "."Aprobado"." ".$fechasys." ".$hora."\r\n";
             fwrite($arch, $datos);
     
             fclose($arch);
