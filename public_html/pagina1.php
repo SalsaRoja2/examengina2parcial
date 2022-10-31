@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/normal.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="shortcut icon" href="images/favicon.ico">
 
 </head>
 
@@ -27,7 +27,7 @@
         <nav class="nav navbar navbar-dark bg-dark">
             <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
 
-           
+            <li class="nav-item" ><img src="images/logo.png" alt="" width="230px"></li>
                 <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.html">Inicio</a></li>
 
                 <li class="nav-item">

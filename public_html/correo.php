@@ -13,13 +13,16 @@
 
                 $myMail = new PHPMailer();
                 $myMail->isSMTP();
+                
+                $myMail = new PHPMailer();
+                $myMail->isSMTP();
                 $myMail->Host='smtp.office365.com';
                 $myMail->SMTPAuth = true;
                 $myMail->Port=587;
-                $myMail->Username='XtremCode@outlook.com';
+                $myMail->Username='xtremcode@outlook.com';
                 $myMail->Password='Examenp2';
                 $myMail->SMTPSecure='tls';
-                $myMail->setFrom('XtremCode@outloo.com','Xtreme Code');
+                $myMail->setFrom('xtremcode@outlook.com','Xtreme Code');
                 $myMail->addAddress($toMail);
                 $myMail->Subject = $asunto;
                 $myMail->isHTML();

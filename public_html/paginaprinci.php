@@ -26,6 +26,8 @@
     <div class="contenedor">
         <nav class="nav navbar navbar-dark bg-dark">
             <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
+
+           
                 <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.html">Inicio</a></li>
 
                 <li class="nav-item">
@@ -36,6 +38,8 @@
                         <li><a class="nav-link" href="">CSS</a></li>
                         <li><a class="nav-link" href="">PHP</a></li>
                         <li><a class="nav-link" href="">JAVASCRIPT</a></li>
+                      
+
                     </ul>
 
 
@@ -46,6 +50,7 @@
 
 
                 <li class="nav-item"><a class="nav-link" href="Acerca%20de.html">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="validar.php">Administrador</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="Cuenta.html"><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
