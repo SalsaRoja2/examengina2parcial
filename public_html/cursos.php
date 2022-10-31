@@ -11,10 +11,7 @@
 
     <link rel="stylesheet" href="css/flexboxpiedepagina.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/carrousel.css">
-
-    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/estilocursos.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -26,27 +23,23 @@
     <div class="contenedor">
         <nav class="nav navbar navbar-dark bg-dark">
             <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
-
-           
-                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.php">Inicio</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="Cursos.html">Cursos</a>
+                    <a class="nav-link" href="cursos.html">Cursos</a>
                     <ul class="menu-vertical">
 
                         <li><a class="nav-link" href="">HTML</a></li>
                         <li><a class="nav-link" href="">CSS</a></li>
                         <li><a class="nav-link" href="">PHP</a></li>
                         <li><a class="nav-link" href="">JAVASCRIPT</a></li>
-                      
-
                     </ul>
 
 
                 </li>
 
 
-                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.php">Contacto</a></li>
 
 
                 <li class="nav-item"><a class="nav-link" href="Acerca%20de.html">Acerca de</a></li>
@@ -95,120 +88,56 @@
             </ul>
 
         </nav>
-        <main>
-            <div class="container-slaider">
-                <div class="slider" id="slider">
-                    <div class="slider__section">
-
-                        <img src="images/2c66a7c617b834535487fbc24a7c3d82.jpg" alt="" class="slider__img">
-                    </div>
-                    <div class="slider__section">
-
-                        <img src="images/9216bcd74a3d55de1a26021541003489.jpg" alt="" class="slider__img">
-
-                    </div>
-                    <div class="slider__section">
-
-                        <img src="images/fondos%20animados2_zpsdbpvulbd.gif" alt="" class="slider__img">
-
-                    </div>
-                </div>
-                <div class="slider__btn slider__btn--right " id="right">&#62;</div>
-                <div class="slider__btn slider__btn--left" id="left">&#60;</div>
-
-
+        <div class="contenedor2">
+        <div class="card">
+            <figure>
+                <img src="images/cppimg.jpg" alt="">
+            </figure>
+            <div class="contenido">
+               <h3>C++</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
+                <a href="validar2.php">Hacer Examen</a>
+                
             </div>
-
-
-        </main>
-
-
-        <div id="sidebar">
-            <div class="contenedor1">
-                <div class="imagen">
-                    <figure>
-                        <img src="images/imagengrid.jpg" alt="">
-                        <div class="capa">
-                            <h3>Busca los mejores cursos para ti</h3>
-                            <p>constantemente estamos renovando y revisando los
-                                cursos que podrían gustarte estate al pendiente porque hay siempre diferentes
-                            </p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
-
         </div>
-
-        <div id="content1">
-            <h1 style="text-align: center;color: orange; align-content: center;padding-top: 20px; padding-bottom:">Porque certificarte con nosotros?</h1>
-            <div class="contenedor1">
-
-
-                <div id="c1">
-                    <h2>Trabajo</h2>
-
-                </div>
-                <div id="c2">
-                    <h2>Becas</h2>
-                </div>
-                <div id="c3">
-                    <h2>Excelentes Resultados</h2>
-                </div>
-                <div id="p1">
-                    <p>Las oportunidades de trabajo con nuestro certificado aumentan y son aún mas seguras!</p>
-
-                </div>
-                <div id="p2">
-                    <p>Tenemos beca, puedes participar mandandonos un correo electronico!</p>
-
-                </div>
-                <div id="p3">
-                    <p>el 80% de las personas que compran nuestros cursos obtienen aumentos o mejores trabajos</p>
-
-                </div>
-
+        
+        <div class="card">
+            <figure>
+                <img src="images/phpimg.webp" alt="">
+            </figure>
+            <div class="contenido">
+               <h3>PHP</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
+                <a href="#">Hacer Examen</a>
+                
             </div>
-
         </div>
-
-        <div id="content2">
-
-            <h1 style="text-align: center;color: orange; align-content: center;padding-top: 20px; padding-bottom:">Programamos Expertos</h1>
-            <div class="contenedor1">
-
-
-
-                <div id="c2">
-
-                </div>
-
-
-
-
-                <div id="p2">
-                    <p>Si quieres Aprender a Programar, Con Xtreme Code te vamos a enseñar</p>
-
-                </div>
-
-
+        
+        <div class="card">
+            <figure>
+                <img src="images/ccsimg.jpg" alt="">
+            </figure>
+            <div class="contenido">
+               <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
+                <a href="#">Hacer Examen</a>
+                
             </div>
-
         </div>
-        <div id="content3"> <div class="imagen">
-                 
-                        
-                         
-                        <div class="capa">
-                          <h3 style="text-align: center; color: orange;">Quienes somos?</h3>
-                            <p style="text-align: center; color: whitesmoke;">somos una organización fundada por expertos en programación que  constantemente  estan </p><p style="text-align: center; color: whitesmoke;">actualizandose para tener las mejores certificaciónes a nivel mundial </p>
-                            <p style="text-align: center;color: whitesmoke;">siempre estamos en constante busqueda de las mejores herramientas </p>
-                             <p style="text-align: center;color: whitesmoke;">para poder que las personas que deseen aprendera programar</p>
-                              <p style="text-align: center;color: whitesmoke;">puedan hacerlo</p>
-                        </div>
-                 
-                </div></div>
+        
+        <div class="card">
+            <figure>
+                <img src="images/jsimg.jfif" alt="">
+            </figure>
+            <div class="contenido">
+               <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid id optio cupiditate nesciunt, vitae tenetur. Laborum vitae nisi consectetur a incidunt saepe. Odio ullam, perspiciatis aliquid quasi voluptate illo facere.</p>
+                <a href="#">Hacer Examen</a>
+                
+            </div>
+        </div>
+        </div>
+      
         <footer>
             <section class="ft-top">
 
@@ -257,7 +186,6 @@
 
 
 
-            <!-- Footer legal -->
             <section class="ft-legal">
                 <ul class="ft-legal-list">
                     <li>&copy; 2022 C-rtificate Todos los derechos Reservados.</li>
@@ -288,14 +216,8 @@
 
 
 
-    <div class="container">
-        <footer>
 
-        </footer>
-    </div>
-
-
-    <script src="js/carrousel.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 

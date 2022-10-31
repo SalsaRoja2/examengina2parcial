@@ -20,7 +20,7 @@
     $doc->Text('145','80','a:');
     $doc->Ln();
     $doc->SetFont('Courier','I','35');
-    $doc->Text('50','110',"nombre persona");
+    $doc->Text('50','110',$_POST['nombreusu']);
     $doc->SetFont('Arial','','20');
     $fechah=date('d-m-y');
     $doc->Text('50','130','Por haber finalizado el dia '.$fechah.' el curso de Manejo de C++');

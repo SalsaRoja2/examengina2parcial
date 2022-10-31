@@ -99,14 +99,21 @@
       
      <div class="container">
   <div class="alert alert-success">
-    <strong>APROBADO!!!</strong> Felicidades pulsa a Continuacion<a href="hpdf.php" class="alert-link"> Para descargar tu certificado</a>.
+    <strong>APROBADO!!!</strong> Felicidades pulsa a Continuacion<a href="hpdf.php" class="alert-link"></a>.
   </div>
 </div> 
       
     </div>
     </div>
+    <form action="hpdf.php" method="post" style="display: felx;">
+        <div style="justify-content: center;">
+        <h3 style="color:white;">Ingresa tu nombre</h3>
+        <div class="form-group">
+                <label for="exampleInputPassword1" style="color:white;">Nombre Completo</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="nombreusu">
+            </div>
     
-    
+            <button type="submit" class="btn btn-primary">Crear PDF</button>
      <footer>
             <section class="ft-top">
 

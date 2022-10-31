@@ -28,13 +28,13 @@
             <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
 
             <li class="nav-item" ><img src="images/logo.png" alt="" width="230px"></li>
-                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.php">Inicio</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="Cursos.html">Cursos</a>
+                    <a class="nav-link" href="cursos.php ">Cursos</a>
                     <ul class="menu-vertical">
 
-                        <li><a class="nav-link" href="">HTML</a></li>
+                        <li><a class="nav-link" href="">C++</a></li>
                         <li><a class="nav-link" href="">CSS</a></li>
                         <li><a class="nav-link" href="">PHP</a></li>
                         <li><a class="nav-link" href="">JAVASCRIPT</a></li>
@@ -46,7 +46,7 @@
                 </li>
 
 
-                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.php">Contacto</a></li>
 
 
                 <li class="nav-item"><a class="nav-link" href="Acerca%20de.html">Acerca de</a></li>

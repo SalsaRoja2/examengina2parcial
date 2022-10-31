@@ -2,10 +2,10 @@
 
 
 $mail = $_POST['emaill'];
-$asunto = 'Nos contactaremos contigo en la brevedad posible';
+$asunto = 'Xtreme Code';
 
 
-$header = "Xtreme Code\r\n";
+$header = "Nos contactaremos contigo en la brevedad posible"."\r\n";
 
 
 

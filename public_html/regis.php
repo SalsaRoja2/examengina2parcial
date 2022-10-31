@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>XtremeC</title>
@@ -13,42 +14,47 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/carrousel.css">
 
-<link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/normal.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-<link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 
 <body>
     <div class="contenedor">
-        <nav>
-            <ul class="menu-horizontal">
-                <li><a href="">Inicio</a></li>
+        <nav class="nav navbar navbar-dark bg-dark">
+            <ul class="nav justify-content-center nav-pills nav-fill menu-horizontal">
 
-                <li>
-                    <a href="">Cursos</a>
+            <li class="nav-item" ><img src="images/logo.png" alt="" width="230px"></li>
+                <li class="nav-item"><a class="nav-link active" style="background-color: #6610f2;" href="pagina1.php">Inicio</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Cursos.php">Cursos</a>
                     <ul class="menu-vertical">
 
-                        <li><a href="">HTML</a></li>
-                        <li><a href="">CSS</a></li>
-                        <li><a href="">PHP</a></li>
-                        <li><a href="">JAVASCRIPT</a></li>
+                        <li><a class="nav-link" href="">C++</a></li>
+                        <li><a class="nav-link" href="">CSS</a></li>
+                        <li><a class="nav-link" href="">PHP</a></li>
+                        <li><a class="nav-link" href="">JAVASCRIPT</a></li>
+                      
+
                     </ul>
 
 
                 </li>
 
 
-                <li><a href="">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.php">Contacto</a></li>
 
 
-                <li><a href="">Acerca de</a></li>
-                <li>
-                    <a href=""><i class="fa-solid fa-user"> </i> Mi cuenta </a>
+                <li class="nav-item"><a class="nav-link" href="Acerca%20de.html">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="validar.php">Administrador</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cuenta.html"><i class="fa-solid fa-user"> </i> Mi cuenta </a>
                     <ul class="menu-vertical">
-                    <?php
+                        <?php
                         date_default_timezone_set('America/Mexico_City');
                         $today = getdate();
                         $hora=$today["hours"];
@@ -67,20 +73,20 @@
                                     $var = $usrh.$_SESSION['usuario'];
                                     echo "<p style='color:white;'>$var </p>";
                                     ?>
-                                    <a href="logout.php">Cerrar sesión</a>
-                                        
-                            <?php
+                        <a class="nav-link" href="logout.php">Cerrar sesión</a>
+
+                        <?php
                                 }else{
 
                                 
                             ?>
-                        <li><a href="cuenta.php">iniciar sesión</a></li>
-                        <li><a href="regis.php">Registrarse</a></li>
+                        <li><a class="nav-link" href="cuenta.php">iniciar sesión</a></li>
+                        <li><a class="nav-link" href="regis.php">Registrarse</a></li>
 
                     </ul>
-                         <?php
+                    <?php
                             }
-                         ?>       
+                         ?>
 
 
                 </li>
@@ -89,6 +95,7 @@
             </ul>
 
         </nav>
+
         <form action="registxt.php" method="post" style="display: felx;">
         <div style="justify-content: center;">
         <h3 style="color:white;">Registrar una cuenta</h3>
