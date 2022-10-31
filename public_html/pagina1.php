@@ -95,6 +95,10 @@
             </ul>
 
         </nav>
+        
+<?php
+echo "La fecha de modificación del fichero 001-ejemplo-php-filemtime.php es '" . date ("F d Y H:i:s.", filemtime("001-ejemplo-php-filemtime.php")) . "'";
+?>
         <main>
             <div class="container-slaider">
                 <div class="slider" id="slider">
